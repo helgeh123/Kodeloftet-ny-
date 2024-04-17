@@ -11,6 +11,34 @@ body {
 padding: 8px;
 }
 
+.mini-page {
+  background-color: aqua;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+  "nav nav"
+  "aside main"  
+  "footer footer";
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 20px 200px 20px;
+}
+
+.mini-page > header {
+  grid-area: nav;
+}
+
+.mini-page > aside {
+  grid-area: aside;
+}
+
+.mini-page > section {
+  grid-area: main;
+}
+
+.mini-page > footer {
+  grid-area: footer;
+}
+
 .flex {
   display: flex;
 }
